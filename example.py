@@ -1,20 +1,7 @@
-# pyIgnite
-Simple deep learning library
-
-### Install
-
-```bash
-pip install numpy
-```
-
-
-### Example
-
-```python
 import numpy as np
 
-from src.loss import CrossEntropyLoss
-from src.optimizer import SGD
+from src.cross_entropy_loss import CrossEntropyLoss
+from src.sgd import SGD
 from src.simple_net import SimpleNet
 
 
@@ -42,5 +29,3 @@ for i in range(100):
     optim.step()
     if (i % 20) == 0:
         print(loss.loss, i)
-
-```
